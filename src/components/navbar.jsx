@@ -31,18 +31,6 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#!">Services</a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#!">Attractions</a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#!">Opinions</a>
-              </li>
-
-              <li className="nav-item">
                 <a className="nav-link" href="#!">Contact</a>
               </li>
 
