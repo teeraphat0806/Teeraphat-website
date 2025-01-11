@@ -9,26 +9,12 @@ const GreatExperienceSection = () => {
         <div className="col-md-6 text-center">
           <div className="position-relative">
             <img
-              src="path-to-your-image.jpg"
+              src="https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S1_03_2560x1440-359e77d3cd0a40aebf3bbc130d14c5c7"
               alt="Building"
               className="img-fluid"
-              style={{ maxHeight: "400px", borderRadius: "8px" }}
+              style={{ maxHeight: "250px", borderRadius: "8px" }}
             />
-            <div
-              className="position-absolute"
-              style={{
-                bottom: "-20px",
-                left: "20px",
-                backgroundColor: "#fff",
-                padding: "10px",
-                boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <h3 className="mb-0 text-dark">
-                17 <span className="text-success">YEARS</span>
-              </h3>
-              <p className="mb-0 text-muted">OF SUCCESSFUL WORK</p>
-            </div>
+            
           </div>
         </div>
 
