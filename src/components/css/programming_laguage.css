@@ -1,0 +1,62 @@
+/* General Styling */
+.most-used-languages {
+  font-family: Arial, sans-serif;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 20px;
+
+ 
+  
+}
+
+.most-used-languages h3 {
+  color: #3366cc;
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Language Item */
+.language-item {
+  margin-bottom: 30px;
+}
+
+.language-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Gradient Bar */
+.gradient-bar {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(90deg, #ff4b4b, #f9d423, #00c851);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gradient-bar1 {
+  height: 30px;
+  width: 100%;
+  background: linear-gradient(90deg, #040f01, #03fdf1, #f30ff3);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.gradient-bar-fill {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 0.5s ease-in-out;
+}

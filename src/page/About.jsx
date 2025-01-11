@@ -1,6 +1,7 @@
 import React from "react";
 import Aboutprofile from "../components/aboutmeprofile";
 import ProfilDeil from "../components/profiledetail";
+import MostUsedLanguages from "../components/programming_laguage";
 
 const About = () => {
     const featurette1 = {
@@ -15,11 +16,17 @@ const About = () => {
     return (
         <div>
             <Aboutprofile />
-
+ 
             <hr className="featurette-divider" />
+           
             <div className="container px-5 py-5">
                 <ProfilDeil data={featurette1} />
             </div>
+
+            <div className="container px-5 py-5">
+                <MostUsedLanguages/>
+            </div>
+
 
         </div>
     )
