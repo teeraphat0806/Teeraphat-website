@@ -25,14 +25,14 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <>
       {/* Conditional rendering for Navbar or MobileMenu */}
       {isMobile ? <MobileMenu /> : <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutme" element={<Aboutme />} />
       </Routes>
-    </BrowserRouter>
+      </>
   );
 }
 
