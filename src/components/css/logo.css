@@ -1,0 +1,30 @@
+.responsive-logos {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center logos horizontally */
+    gap: 10px; /* Spacing between logos */
+  }
+  
+  .logo {
+    height: 40px; /* Set a fixed height for consistency */
+    max-width: 60px; /* Prevent logos from getting too wide */
+    object-fit: contain; /* Maintain aspect ratio without distortion */
+    margin: 5px; /* Add spacing around each logo */
+  }
+  
+  /* Media Query for Larger Screens */
+  @media (min-width: 768px) {
+    .logo {
+      height: 50px; /* Slightly larger for tablets/desktops */
+      max-width: 70px;
+    }
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 480px) {
+    .logo {
+      height: 30px; /* Smaller logos for very small screens */
+      max-width: 50px;
+    }
+  }
+  

@@ -3,10 +3,10 @@ import "../components/css/soicalmedia.css";
 
 const SocialMedia3DIcons = () => {
   return (
-    <div className="SocialMedia">
+    <div className="SocialMedia" >
     <ul>
       <li>
-        <a href="https://www.facebook.com/?locale=th_TH" className="facebook">
+        <a href="https://www.facebook.com/teerachart.sangjan.7/?locale=th_TH" className="facebook">
           <span></span>
           <span></span>
           <span></span>
@@ -15,7 +15,7 @@ const SocialMedia3DIcons = () => {
         </a>
       </li>
       <li>
-        <a href="" className="phone">
+        <a href="tel:0863825928" className="phone">
           <span></span>
           <span></span>
           <span></span>
@@ -24,7 +24,7 @@ const SocialMedia3DIcons = () => {
         </a>
       </li>
       <li>
-        <a href="#" className="instagram">
+        <a href="https://github.com/teeraphat0806" className="instagram">
           <span></span>
           <span></span>
           <span></span>
@@ -33,7 +33,7 @@ const SocialMedia3DIcons = () => {
         </a>
       </li>
       <li>
-        <a href="#" className="linkedin">
+        <a href="https://th.linkedin.com/in/teeraphat-jirapasnitilert-b92811275" className="linkedin">
           <span></span>
           <span></span>
           <span></span>

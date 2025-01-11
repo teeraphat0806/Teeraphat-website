@@ -1,0 +1,23 @@
+/* Fade and Bounce-In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px); /* เริ่มจากเลื่อนลงล่าง */
+    animation: bounceFadeIn 1s ease-out forwards; /* เริ่มและคงสถานะหลังจบ */
+  }
+  
+  /* Keyframes สำหรับเฟดและเด้ง */
+  @keyframes bounceFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* เริ่มจากเลื่อนลงล่าง */
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-10px); /* เด้งขึ้น */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* อยู่ตำแหน่งปกติ */
+    }
+  }
+  

@@ -8,12 +8,47 @@
       color: #4f4f4f !important;
     }
   }
-  
-  .navbar-brand {
-    letter-spacing: 3px;
-    font-size: 2rem;
-    font-weight: 500;
-  }
+  /* Neon Cyberpunk AMT Styling */
+/* Neon Cyberpunk AMT Styling */
+/* Neon Cyberpunk AMT Styling */
+.text-cyberpunk {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  font-size: 7rem; /* ขยายขนาดตัวอักษรให้ใหญ่ขึ้น */
+  font-weight: 900; /* เพิ่มน้ำหนักให้ตัวอักษร */
+  text-transform: uppercase; /* ตัวพิมพ์ใหญ่ทั้งหมด */
+  letter-spacing: 8px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+  color: #FFD700; /* Neon Yellow color */
+  text-shadow: 
+    0 0 15px #FFD700, 
+    0 0 30px #FFD700, 
+    0 0 45px #FFD700, 
+    0 0 60px #FFEA00, 
+    0 0 75px #FFEA00, 
+    0 0 100px #FFEA00; /* เพิ่มเลเยอร์ของแสง */
+  transition: transform 0.3s ease, text-shadow 0.3s ease; /* เพิ่มเอฟเฟกต์ Smooth */
+}
+
+/* Navigation Links Styling */
+.nav-link {
+  font-size: 2rem; /* เพิ่มขนาดตัวอักษรใน Navbar */
+  font-weight: 700; /* ทำให้ตัวอักษรหนา */
+  letter-spacing: 2px; /* เพิ่มระยะห่าง */
+  color: #FFFFFF; /* ข้อความสีขาว */
+  text-transform: uppercase; /* ตัวพิมพ์ใหญ่ทั้งหมด */
+  transition: color 0.3s ease; /* เอฟเฟกต์เปลี่ยนสี */
+}
+
+.nav-link:hover {
+  color: #ff5678; /* เปลี่ยนเป็นสีชมพูเมื่อ Hover */
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+  font-size: 3rem; /* เพิ่มขนาดตัวอักษรของโลโก้ */
+  font-weight: 900; /* เพิ่มน้ำหนักตัวอักษร */
+  letter-spacing: 4px; /* เพิ่มระยะห่าง */
+}
+
   
   .navbar-scroll .navbar-brand,
   .navbar-scroll .nav-link,

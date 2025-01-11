@@ -4,12 +4,12 @@ import "../components/css/programming_laguage.css";
 const MostUsedLanguages = () => {
   // Language data
   const languages = [
-    { name: "Java", percentage: 32.28 ,color: "gradient-bar1"},
+    { name: "Java", percentage: 32.28 ,color: "gradient-bar"},
     { name: "JavaScript", percentage: 32.06, color: "gradient-bar1"},
-    { name: "Dart", percentage: 24.37 ,color: "gradient-bar"},
-    { name: "C++", percentage: 5.98 , color: "gradient-bar1"},
-    { name: "CMake", percentage: 3.29 ,color: "gradient-bar"},
-    { name: "CSS", percentage: 2.03 , color: "gradient-bar1"},
+    { name: "Dart", percentage: 24.37 ,color: "gradient-bar2"},
+    { name: "C++", percentage: 5.98 , color: "gradient-bar3"},
+    { name: "Python", percentage: 3.29 ,color: "gradient-bar4"},
+   
   ];
 
   return (

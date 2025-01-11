@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.gradient-text {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(90deg, #ff5678, #ff99cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem; /* Adjust as needed */
+    animation: gradient-flow 3s infinite linear; /* Add flow animation */
+  }
+  
+  @keyframes gradient-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  /* Neon Flowing Title */
+.neon-flow {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+    color:rgba(255, 255, 255, 0.77); /* Base white color */
+    text-shadow: 0 0 2px #ffffff, 0 0 7px #ffffff, 0 0 20px #00ffff, 
+                 0 0 40px rgba(0, 255, 255, 0.54), 0 0 80px rgba(0, 255, 255, 0.24), 0 0 120px rgba(0, 255, 255, 0.69);
+   
+  }
+  
+
+  

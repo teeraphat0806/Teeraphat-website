@@ -1,0 +1,25 @@
+.logo_notion {
+    height: 200px; /* Set a larger fixed height for consistency */
+    max-width: 250px; /* Allow logos to be wider */
+    object-fit: contain; /* Maintain aspect ratio without distortion */
+    margin-right: 7px;
+  }
+  
+  /* Media Query for Larger Screens */
+  @media (min-width: 768px) {
+    .logo_notion {
+      height: 200px; /* Larger size for tablets/desktops */
+      max-width: 250px;
+      margin-right: 6px;
+    }
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 480px) {
+    .logo_notion {
+      height: 70px; /* Larger size for very small screens */
+      max-width: 90px;
+      margin-right: 3px;
+    }
+  }
+  

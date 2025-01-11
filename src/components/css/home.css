@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400&display=swap');
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 60px 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.contact-heading {
+  font-family: 'Orbitron', sans-serif; /* Futuristic robotic font */
+  font-size: 2rem; /* Larger font for impact */
+  font-weight: bold;
+  color: #ffffff; /* White text color */
+  text-transform: uppercase; /* Uppercase letters for a clean robotic style */
+  margin-bottom: 40px;
+}
+
+.contact-description {
+  font-family: 'Roboto', sans-serif; /* Simple complementary font */
+  font-size: 1.2rem;
+  color: #dddddd; /* Subtle gray for readability */
+  margin-bottom: 30px;
+}
+
+.contact-section .text-center {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section a {
+  color: #ffffff; /* White for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: #00FFFF; /* Cyan on hover for a tech-inspired feel */
+}
