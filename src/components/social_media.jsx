@@ -47,7 +47,7 @@ const SocialMedia3DIcons = () => {
           <span></span>
           <span></span>
           <span></span>
-          <span className="fa fa-email"></span>
+          <span className="fa fa-envelope"></span>
         </a>
       </li>
     </ul>
