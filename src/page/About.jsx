@@ -23,7 +23,7 @@ const About = () => {
         reverse: false, // Default layout
     };
     return (
-        <div>
+        <div >
             <Aboutsection/>
             
  
