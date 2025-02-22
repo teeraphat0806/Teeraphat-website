@@ -35,7 +35,7 @@ const Homesection = () => {
               </p>
 
               {/* ✅ ปุ่มสีแดงที่ขยายเมื่อ Hover */}
-              <a href="https://drive.google.com/uc?export=download&id=17-hkBhpM-aTIAymoY55dDUl6c9gHx1It"  download className="btn custom-red-btn">
+              <a href="https://drive.google.com/uc?export=download&id=1Ajk0qgwHdrDD0hudunN-ouGE7LhNDKDE"  download className="btn custom-red-btn">
                 Get My Resume
               </a>
             </div>
