@@ -1,0 +1,54 @@
+/* ✅ Card พื้นหลังสีเทาดำ และสีขาวตลอด */
+.card-img-container {
+    width: 100%;
+    height: 200px; /* ✅ ตั้งค่าความสูงคงที่ */
+    overflow: hidden;
+  }
+  
+  .fixed-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ✅ ครอบรูปให้พอดี ไม่ผิดสัดส่วน */
+  }
+  
+.custom-card {
+    background-color: #343a40; /* เทาดำ */
+    color: white; /* สีข้อความขาว */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  /* ✅ Hover เป็นสีม่วง */
+  .custom-card:hover {
+    background-color: #6f42c1; /* ม่วง */
+    transform: scale(1.05);
+  }
+  
+  /* ✅ ปรับแต่ง Icon ที่มุมขวาล่าง */
+  .card-icon-bottom {
+    width: 30px; /* ✅ ปรับขนาดไอคอน */
+    height: 30px;
+    margin-left: 12%;
+    margin-bottom: 5%;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+ .card-title{
+    font-weight:700;
+ }
+ .icon-container {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+    gap: 10px; /* ระยะห่างระหว่างไอคอน */
+    padding: 10px;
+  }
+  
+  .card-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  

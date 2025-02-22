@@ -1,0 +1,53 @@
+/* ✅ Centering Carousel Cards */
+.transition-card {
+    background-color: #343a40;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    width: 120%; /* ✅ Ensure full width */
+    max-width: 400px; /* ✅ Prevents it from being too small */
+    margin: auto; /* ✅ Centering */
+  }
+  
+  /* ✅ Hover Effect */
+  .transition-card.hovered {
+    background-color: #6f42c1;
+    transform: scale(1.05);
+  }
+  
+  /* ✅ Fix Image Size */
+  .card-img-container {
+    width: 120%;
+    height: 250px; /* ✅ Adjusted height */
+    overflow: hidden;
+  }
+  
+  .fixed-img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover; /* ✅ Prevent image distortion */
+  }
+  
+  /* ✅ Icon Position */
+  .card-icon-top {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* ✅ Fix Button */
+  .custom-red-btn {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .custom-red-btn:hover {
+    background-color: #c82333;
+    color: white;
+  }
+ 

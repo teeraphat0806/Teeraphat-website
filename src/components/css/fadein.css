@@ -1,23 +1,79 @@
-/* Fade and Bounce-In Animation */
-.fade-in {
-    opacity: 0;
-    transform: translateY(50px); /* เริ่มจากเลื่อนลงล่าง */
-    animation: bounceFadeIn 1s ease-out forwards; /* เริ่มและคงสถานะหลังจบ */
+/* ✅ พื้นหลัง Responsive */
+#intro {
+  background-image: url('/images/profileme.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: left center; /* ✅ ขยับรูปไปทางซ้าย */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ จัดตำแหน่ง Text */
+.text-content {
+  max-width: 80%;
+}
+
+/* ✅ ปรับขนาด Font */
+.text-glow {
+  text-shadow: 0 0 5px #fff, 0 0 15px #ff4d4d, 0 0 30px #ff0000;
+}
+
+/* ✅ ขนาด Font สำหรับ PC */
+.desktop-title {
+  font-size: 4rem;
+}
+
+.desktop-text {
+  font-size: 1.5rem;
+  max-width: 80%;
+  line-height: 1.8;
+}
+
+/* ✅ ปุ่มสีแดงที่ใหญ่ขึ้นเมื่อ Hover */
+.custom-red-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-red-btn:hover {
+  transform: scale(1.1);
+  background-color: #ff0000;
+}
+
+/* ✅ Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+  #intro {
+    background-position: center; /* ✅ ในมือถือให้ภาพอยู่ตรงกลาง */
+    background-position-x: 650px;
+    height: 100vh;
+    padding: 20px;
   }
-  
-  /* Keyframes สำหรับเฟดและเด้ง */
-  @keyframes bounceFadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(50px); /* เริ่มจากเลื่อนลงล่าง */
-    }
-    60% {
-      opacity: 1;
-      transform: translateY(-10px); /* เด้งขึ้น */
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0); /* อยู่ตำแหน่งปกติ */
-    }
+
+  .text-content {
+    max-width: 100%;
+    text-align: center;
   }
-  
+
+  /* ✅ ลดขนาดตัวอักษรในมือถือ */
+  .mobile-title {
+    font-size: 2.5rem;
+  }
+
+  .mobile-text {
+    font-size: 1.2rem;
+  }
+
+  /* ✅ ลดขนาดปุ่ม */
+  .custom-red-btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}

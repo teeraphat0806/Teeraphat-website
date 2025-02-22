@@ -1,22 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/css/fadein.css";
+import SakuraFalling from "./sakura";
+
 const Homesection = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  // Logic to check screen size
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768); // Set threshold for mobile screens
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    // Initial check
     checkScreenSize();
-
-    // Add event listener for resize
     window.addEventListener("resize", checkScreenSize);
-
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", checkScreenSize);
     };
@@ -24,60 +20,26 @@ const Homesection = () => {
 
   return (
     <section className="fade-in">
-      <div
-        id="intro"
-        className="bg-image d-flex justify-content-center align-items-center text-center"
-        style={{
-          backgroundImage:
-            "url('https://static.cdprojektred.com/cms.cdprojektred.com/16x9_big/872822c5e50dc71f345416098d29fc3ae5cd26c1-1280x720.jpg')",
-          height: "100vh",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div
-          className="mask w-100"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-        >
-          {/* Heading */}
-          <h1
-            className="mb-0 text-white display-1 text-glow"
-            style={{
-              fontWeight: "bold",
-              letterSpacing: "3px",
-              textTransform: "uppercase",
-              marginBottom: "10px",
-            }}
-          >
-            FULLSTACK DEVELOPER
-          </h1>
+      <SakuraFalling />
+      <div id="intro" className="d-flex align-items-center text-left">
+        <div className="container">
+          <div className="row align-items-center">
+            {/* ✅ Text ด้านซ้าย */}
+            <div className="col-lg-6 col-md-8 col-sm-10 text-white text-content">
+              <h1 className={`fw-bold text-glow ${isMobile ? "mobile-title" : "desktop-title"}`}>
+                FULLSTACK DEVELOPER
+              </h1>
 
-          {/* Conditional Rendering for Text */}
-          {isMobile ? (
-            <p
-              className="mb-0 text-white"
-              style={{
-                fontSize: "1.2rem", // Smaller font for mobile
-                maxWidth: "90%",
-                margin: "0 auto",
-                lineHeight: "1.6",
-              }}
-            >
-              HI :) I'm T. This is my Story.
-            </p>
-          ) : (
-            <p
-              className="mb-0 text-white display-6"
-              style={{
-                fontSize: "1.5rem", // Larger font for desktop
-                maxWidth: "70%",
-                margin: "0 auto",
-                lineHeight: "1.8",
-              }}
-            >
-              HI :) My name is T. Here is my Story.
-            </p>
-          )}
+              <p className={`text-description ${isMobile ? "mobile-text" : "desktop-text"}`}>
+                HI :) My name is T. Here is my Story.
+              </p>
+
+              {/* ✅ ปุ่มสีแดงที่ขยายเมื่อ Hover */}
+              <a href="https://drive.google.com/uc?export=download&id=17-hkBhpM-aTIAymoY55dDUl6c9gHx1It"  download className="btn custom-red-btn">
+                Get My Resume
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

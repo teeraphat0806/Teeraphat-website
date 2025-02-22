@@ -4,7 +4,15 @@
     object-fit: contain; /* Maintain aspect ratio without distortion */
     margin-right: 7px;
   }
-  
+  .transparent-image {
+    background: none !important; /* ลบพื้นหลังดำ */
+    mix-blend-mode: multiply; /* ช่วยให้สีโปร่งใส */
+    filter: brightness(100%) contrast(100%);
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ 
   /* Media Query for Larger Screens */
   @media (min-width: 768px) {
     .logo_notion {
@@ -14,12 +22,4 @@
     }
   }
   
-  /* Media Query for Smaller Screens */
-  @media (max-width: 480px) {
-    .logo_notion {
-      height: 70px; /* Larger size for very small screens */
-      max-width: 90px;
-      margin-right: 3px;
-    }
-  }
-  
+ 

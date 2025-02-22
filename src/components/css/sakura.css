@@ -1,0 +1,30 @@
+@keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
+  
+  .sakura {
+    position: fixed;
+    top: -50px; /* ให้เริ่มจากด้านบน */
+    width: 40px;
+    height: 40px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/6475/6475165.png"); /* ไอคอนใบซากุระ */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: fall linear infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .sakura {
+      width: 25px; /* ปรับขนาดสำหรับมือถือ */
+      height: 25px;
+    }
+  }
+  

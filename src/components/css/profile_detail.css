@@ -30,4 +30,43 @@
   }
   
 
-  
+  .neon-flow2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.77); /* Base white color */
+    text-align: center;
+    text-shadow: 0 0 2px #ffffff, 0 0 7px #ffffff, 0 0 20px #00ffff, 
+                 0 0 40px rgba(0, 255, 255, 0.54), 0 0 80px rgba(0, 255, 255, 0.24), 
+                 0 0 120px rgba(0, 255, 255, 0.69);
+
+    /* Default for Desktop */
+    font-size: 3rem;  
+    margin: 20px 0;
+}
+
+/* ✅ สำหรับ Tablet (ขนาดกลาง) */
+@media (max-width: 992px) {
+    .neon-flow2 {
+        font-size: 2.5rem;
+        text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff, 0 0 15px #00ffff, 
+                     0 0 30px rgba(0, 255, 255, 0.5), 0 0 60px rgba(0, 255, 255, 0.2);
+    }
+}
+
+/* ✅ สำหรับ Mobile (ขนาดเล็ก) */
+@media (max-width: 768px) {
+    .neon-flow2 {
+        font-size: 2rem;
+        text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff, 0 0 10px #00ffff, 
+                     0 0 20px rgba(0, 255, 255, 0.5);
+    }
+}
+
+/* ✅ สำหรับหน้าจอมือถือเล็ก (Very Small) */
+@media (max-width: 480px) {
+    .neon-flow2 {
+        font-size: 1.5rem;
+        text-shadow: 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 8px #00ffff;
+    }
+}
